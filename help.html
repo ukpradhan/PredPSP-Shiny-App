@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!-- zerotype index.html page -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>PredPSP: Help</title>
+	<link rel="stylesheet" type="text/css">
+	<style>
+		  .container {
+				  display: flex;
+				  align-items: center;
+				  justify-content: center
+				}
+				img {
+				  max-width: 100%;
+				  max-height:100%;
+				}
+  </style>
+</head>
+<body>
+	<div id="container" style="margin: auto;width:60%;">
+		<div style="background-color:#E5E4E2;">	
+			<div class="container">
+				<div class="image" style="padding-right: 26px;"><img src="images/logo_psp.png" alt="image not found" height="120" width="250"></div>
+				<p style="font:25px 'Times New Roman', serif;font-weight: bold;color:#0047AB;text-align:center;"><i>Pred</i>PSP: A Web Server for Photosynthetic Protein Prediction in Plants</p>
+			</div> 	
+		</div>
+		<div>
+			<div style="text-align:center;background-color:#7393B3;margin:auto;height:30px;width:100%;padding-top:2px;">
+				<a href="index.html" style="padding: 30px;font:20px 'Times New Roman', serif;font-weight: bold;color:white;text-decoration: none;">Home</a>			
+				<a href="server.php" style="padding: 30px;font:20px 'Times New Roman', serif;font-weight: bold;color:white;text-decoration: none;">Run Server</a>
+				<a href="dataset.html" style="padding: 30px;font:20px 'Times New Roman', serif;font-weight: bold;color:white;text-decoration: none;">Dataset</a>
+				<a href="help.html" style="padding: 30px;font:20px 'Times New Roman', serif;font-weight: bold;color:white;text-decoration: none;">Help</a>
+				<a href="contact.html" style="padding: 30px;font:20px 'Times New Roman', serif;font-weight: bold;color:white;text-decoration: none;">Contact Us</a>
+			</div>
+		</div>
+		<div style="background-color: #ECFFDC;border:1px solid #ECFFDC;">
+			<p style="font:20px'Times New Roman',serif;font-weight: bold;color:black;padding:5px 20px;">Input</p>
+			<p style="text-align: justify;font:18px 'Times New Roman', serif;color:black;padding:5px 20px;">
+			User has to supply the protein sequences in FASTA format. Each sequence should contain only standard amino acid residues in a single letter code format i.e., A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y. An example dataset of sequences is as follows:
+			</p>
+			<p style="text-align: justify; text-indent: 5px; font:16px Courier New, Courier, monospace; color:black;padding:5px 20px;">
+				>sp|Q20EW6|PSAA_OLTVI
+				<br/>	
+				MTISPPEREAKKVKIVVDRNPVETSLEKWAKPGHFSRALSKGPTTTTWIWNLHADAHDFDSHTSDLEDISRKVFSAHFGQLGIIFIWLSGMYFHGARFSNYEAWLSDPTHIKP
+				SAQVVWPVVGQEILNGDVGGGFQGIQITSGFFQLWRASGITSELQLYATAIGGLVMAAAMFFAGWFHYHKAAPKLEWFQNVESMMNHHLAGLLGLGSLAWAGHQIHISLPINK
+				LLDAGVDPKEIPLPHELMLNRELMAQLYPSFAKGLAPFFTLNWGEYSDFLTFQGGLNPVTGGLWLSDEAHHHLAIAVLFLIAGHQYRTNWGIGHSMKEILEAHKGPFTGEGHK
+				GLYEILTTSWHAQLAINLAMLGSLSIIVAHHMYAMPPYPYLATDYGTQLSLFTHHVWIGGFCIVGAGAHAAIFMVRDYDPTNNYNNLLDRVIRHRDAIISHLNWVCIFLGFHS
+				FGLYIHNDTMSALGRPQDMFSDTAIQLQPVFAQWVQNTHFLAPQLTAPNALAATSVSWGGDVVAVGGKVAMMPIALGTSDFLVHHIHAFTIHVTVLILLKGVLYSRSSRLIPD
+				KANLGFRFPCDGPGRGGTCQVSAWDHVFLGLFWMYNSLSIVIFHFSWKMQSDVWGSVTASGVTHITGGNFAASANTINGWLRDFLWAQSSQVIQSYGSALSAYGLMFLGAHFV
+				WAFSLMFLFSGRGYWQELIESIVWAHNKLKVAPAIQPRALSITQGRAVGVAHYLLGGIATTWSFFLARIISVG				
+			</p>
+			<p style="text-align: justify; text-indent: 5px; font:16px Courier New, Courier, monospace; color:black;padding:5px 20px;">
+				>sp|Q20EW7|PSAB_OLTVI
+				<br />
+				MATKFPKFSQGLAQDPTTRRIWFGIATAHDFESHDGMTEENLYQKIFASHFGQLAIIFLWTSGNLFHVAWQGNFEQWIKDPLHIRPIAHAIWDPHFGQPAVEAFTRGGASGPV
+				NIATSGVYQWWYTIGMRTNQELYTASVFLSLMAGVFLFAGWLHLQPKFQPSLSWFKNAESRLNHHLSGLFGVSSLAWTGHLVHVAIPAARGQRVGWDNFLTTLPHPEGLTPFF
+				TGNWAAYAANPDSANHIFGTSAGAGTAILTFLGGFHPQTQSLWLTDIAHHHLAIAVVFIIAGHQYRTNFGIGHSMREILDAHTPPAGGLGAGHKGLFDTVNNSLHFQLGLALA
+				SVGTICSMVAQHIYSLPPYAFLAQDYTAQAALYTHHQYIAGFIMCGAFAHGAIFFIRDYDPEQNKGNVLARILDHKEAIISHLSWVSLFLGFHTLGLYVHNDVMQAFGTPEKQ
+				ILIEPVFAQWIQAAQGKALYGFDFLLSSSASPAYSASQSVWLPGWLDAINSNNNSLFLTIGPGDFLVHHAIALGLHTTTLILVKGALDARGSKLMPDKKDFGYSFPCDGPGRG
+				GTCDISAWDAFYLAVFWMLNTIGWVTFYFHWKHLGIWQGNVSQFNESSTYLMGWLRDYLWLNSSQLINGYNPNGMNSLGVWSWAFLLAHLIYATGFMFLISWRGYWQELIETL
+				VWSHERTPLASLVRWRDKPVALSIVQARLVGLVHFSVGYVLTYGSFLIASTSSKFG
+			</p>	
+			<p style="font:20px'Times New Roman',serif;font-weight: bold;color:black;padding:5px 20px;">Output</p>
+			<p style="text-align: justify;font:18px 'Times New Roman', serif;color:black;padding:5px 20px;">
+			The result table shows the probabilities with which each sequence is predicted to a photo synthetic related protein. The table below shows the predicted probability with each sequence is predicted. For instance, the first sequence is predicted as PSP with probability 0.71. Similar inference can be made for other sequences as well.
+			</p>
+			<center>
+				<table style="border: 1px solid; width: 80%; border-collapse: collapse; text-align:center;font:16px'Times New Roman',serif;color:black;">
+					<tr>
+						<th style="border: 1px solid;">Sl No.</th>
+						<th style="border: 1px solid;">Sequence ID</th>
+						<th style="border: 1px solid;"> Predicted as photosynthetic related protein with probability </th>
+									
+					</tr>
+					<tr>
+						<td style="border: 1px solid;">1</td>
+						<td style="border: 1px solid;">sp|Q20EW6|PSAA_OLTVI</td>
+						<td style="border: 1px solid;">0.71</td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid;">2</td>
+						<td style="border: 1px solid;">sp|Q20EW7|PSAB_OLTVI</td>
+						<td style="border: 1px solid;">0.84</td>
+					</tr>
+				</table>
+			</center>
+			<br/>
+		</div>
+		<div class="row" style="background-color:#E5E4E2;">
+			<div class="container">
+				<div class="image" style="padding-right: 26px;">
+					<a href="https://icar.org.in/" target="_blank">
+					<img src="images/icarlogo.png" alt="image not found" width="60" height="80"></a>
+				</div>        
+				<p style="margin:auto;font:18px 'Times New Roman', serif;color:#0047AB;font-weight:bold;">Developed @ ICAR-IASRI, Pusa, New Delhi - 110012</p>
+				<div class="image" style="padding-right: 26px;">
+					<a href="https://iasri.icar.gov.in/" target="_blank">
+					<img src="images/iasri_logo.png" alt="image not found"  width="80" height="80"></a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<center>
+				<div style="width:400px; height:300px;"><script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=4_i48pTFCI61SmRq8iu8e3HDQFBiIU43v0nxKaSX7Fc&cl=ffffff&w=a"></script>
+				</div>
+			</center>
+		</div>
+	</div>
+</body>
+</html>
